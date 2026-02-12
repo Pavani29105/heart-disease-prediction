@@ -40,14 +40,25 @@ def predict():
     }])
 
     prediction = model.predict(input_data)[0]
+    probability = model.predict_proba(input_data)[0]
+
+    # probability[1] = chance of heart disease
+    # probability[0] = chance of no heart disease
 
     if prediction == 1:
         result = "⚠️ High Risk of Heart Disease"
+        prob = probability[1] * 100
     else:
         result = "✅ Low Risk of Heart Disease"
+        prob = probability[0] * 100
 
-    # Send result to a new page
-    return render_template("result.html", result=result)
+    return render_template(
+        "result.html",
+        prediction_text=result,
+        probability=prob"
+    )
+
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(host="0.0.0.0", port=5000)
+
