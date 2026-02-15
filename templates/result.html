@@ -15,7 +15,7 @@
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
         }
         .btn {
-            margin-top: 20px;
+            margin-top: 15px;
             padding: 10px 20px;
             background-color: #e74c3c;
             color: white;
@@ -23,15 +23,29 @@
             border-radius: 5px;
             text-decoration: none;
             font-size: 16px;
+            display: inline-block;
+        }
+        .btn:hover {
+            background-color: #c0392b;
         }
     </style>
 </head>
 <body>
     <div class="box">
         <h2>Prediction Result</h2>
-        <h3>{{ result }}</h3>
 
+        <h3>{{ result }}</h3>
+        <h4>{{ probability }}</h4>
+        <p><strong>Patient:</strong> {{ name }}</p>
+
+        <br>
+
+        <!-- Back Button -->
         <a href="/" class="btn">⬅ Back to Questionnaire</a>
+
+        <!-- History Button -->
+        <a href="/history" class="btn">📋 View History</a>
+
     </div>
 </body>
 </html>
