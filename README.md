@@ -175,7 +175,12 @@ Add screenshots of:
 - <img width="2273" height="1442" alt="image" src="https://github.com/user-attachments/assets/f637a643-e3a0-4b92-b076-005ce44a1cc5" />
 
 - Prediction Result Page
+- <img width="778" height="640" alt="image" src="https://github.com/user-attachments/assets/016378f0-208b-406e-9d5b-55d046cb2a80" />
+
+- 
 - History Page
+- <img width="2453" height="633" alt="image" src="https://github.com/user-attachments/assets/cdbac5b2-d57b-4108-a71e-735684fa9478" />
+
 
 ---
 
